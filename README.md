@@ -38,17 +38,38 @@ If the output is 1, then the led glows.
 Program:
 /*
 Program to design a half adder and full adder circuit and verify its truth table in quartus using Verilog programming.
-Developed by: 
-RegisterNumber:  
+Developed by: yuvasri k
+RegisterNumber:  212222050061
 */
+HALFADDER:
+module halfdder(a,b,sum,carry);
+input a,b;
+output sum,carry;
+xor (sum,a,b);
+and(carry,a,b);
+end module
+FULL ADDER:
+module fulladder(a,b,c,sum,carry);
+input(a,b,c);
+output sum,carry;
+assign sum=((a^b)^c);
+assign carry=((a&b)|(b&c)|(c&a));
+endmodule
+
 Logic symbol & Truthtable
 RTL realization
+![WhatsApp Image 2023-04-19 at 14 22 54](https://user-images.githubusercontent.com/129949620/233025409-50c0ab34-6135-4233-b9b9-be6f1d028ff8.jpg)
+![WhatsApp Image 2023-04-19 at 14 23 03](https://user-images.githubusercontent.com/129949620/233025636-504edc94-032e-426d-8145-682cb10a0de9.jpg)
 
 ### Output:
 ### RTL
+
 ### TIMING DIAGRAM
+![WhatsApp Image 2023-04-19 at 14 23 34](https://user-images.githubusercontent.com/129949620/233026179-cf0f283e-baea-4f13-9458-45581dd49303.jpg)
+![WhatsApp Image 2023-04-19 at 14 23 47](https://user-images.githubusercontent.com/129949620/233026414-bfb4a318-8318-47e5-aa48-ea72ee3f2991.jpg)
 
 
 ### TRUTH TABLE 
 
 ### Result:
+hence fulladder and half adder are implimented
