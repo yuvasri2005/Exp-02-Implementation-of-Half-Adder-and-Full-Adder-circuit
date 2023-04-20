@@ -36,28 +36,72 @@ Switch ON the main switch
 If the output is 1, then the led glows.
 ### 
 Program:
-/*
+
 Program to design a half adder and full adder circuit and verify its truth table in quartus using Verilog programming.
-Developed by: yuvasri k
+
+
+Developed by: K.YUVASRI
+
 RegisterNumber:  212222050061
-*/
+
 HALFADDER:
+
 module halfdder(a,b,sum,carry);
+
 input a,b;
+
 output sum,carry;
+
 xor (sum,a,b);
+
 and(carry,a,b);
+
 end module
+
 FULL ADDER:
+
 module fulladder(a,b,c,sum,carry);
+
 input(a,b,c);
+
 output sum,carry;
+
 assign sum=((a^b)^c);
+
 assign carry=((a&b)|(b&c)|(c&a));
+
 endmodule
 
-Logic symbol & Truthtable
+
+
+
+Logic symbol
+
+
+
+![WhatsApp Image 2023-04-20 at 11 25 34 AM](https://user-images.githubusercontent.com/129949620/233272502-cf85b42d-b318-49e8-8629-23626794cec4.jpeg)
+
+
+ Truthtable
+ 
+ 
+ 
+
+
+ FULL ADDER
+ 
+ ![WhatsApp Image 2023-04-20 at 11 24 23 AM](https://user-images.githubusercontent.com/129949620/233272015-959e0c99-f284-46d9-84a7-9f65205215be.jpeg)
+ 
+ HALF ADDER
+ 
+ 
+![WhatsApp Image 2023-04-20 at 11 24 09 AM](https://user-images.githubusercontent.com/129949620/233272038-fe81cc98-af07-4d48-a55e-1c7a3352ac96.jpeg)
+
+ 
+ 
+
 RTL realization
+
 ![WhatsApp Image 2023-04-19 at 14 22 54](https://user-images.githubusercontent.com/129949620/233025409-50c0ab34-6135-4233-b9b9-be6f1d028ff8.jpg)
 ![WhatsApp Image 2023-04-19 at 14 23 03](https://user-images.githubusercontent.com/129949620/233025636-504edc94-032e-426d-8145-682cb10a0de9.jpg)
 
@@ -65,11 +109,12 @@ RTL realization
 ### RTL
 
 ### TIMING DIAGRAM
+
 ![WhatsApp Image 2023-04-19 at 14 23 34](https://user-images.githubusercontent.com/129949620/233026179-cf0f283e-baea-4f13-9458-45581dd49303.jpg)
 ![WhatsApp Image 2023-04-19 at 14 23 47](https://user-images.githubusercontent.com/129949620/233026414-bfb4a318-8318-47e5-aa48-ea72ee3f2991.jpg)
 
 
-### TRUTH TABLE 
+
 
 ### Result:
-hence fulladder and half adder are implimented
+ Thus the implementation of Halfadder Fulladder Circuit are studied and the truthtable for different logic gates are verified
