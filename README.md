@@ -117,4 +117,4 @@ RTL realization
 
 
 ### Result:
- Thus the implementation of Halfadder Fulladder Circuit are studied and the truthtable for different logic gates are verified.. 
+ Thus the implementation of Halfadder Fulladder Circuit are studied and the truthtable for different logic gates are verified.
